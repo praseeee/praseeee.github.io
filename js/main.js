@@ -25,45 +25,6 @@ function requestPermission() {
         console.error("Pengguna menutup kotak dialog permintaan ijin.");
         return;
       }
-
-      if ("PushManager" in window) {
-        navigator.serviceWorker.getRegistration().then(function (registration) {
-          registration.pushManager
-            .subscribe({
-              userVisibleOnly: true,
-              applicationServerKey: urlBase64ToUint8Array(
-                "BKzLWAnUeIap_maCX8tTe2K8HEOysKNp_uT1oh5ht_RJJjtBRSP6P3rEaqlc-EOjALvCD0gEFNfKg047bs2Gii8"
-              ),
-            })
-            .then(function (subscribe) {
-              console.log(
-                "Berhasil melakukan subscribe dengan endpoint: ",
-                subscribe.endpoint
-              );
-              console.log(
-                "Berhasil melakukan subscribe dengan p256dh key: ",
-                btoa(
-                  String.fromCharCode.apply(
-                    null,
-                    new Uint8Array(subscribe.getKey("p256dh"))
-                  )
-                )
-              );
-              console.log(
-                "Berhasil melakukan subscribe dengan auth key: ",
-                btoa(
-                  String.fromCharCode.apply(
-                    null,
-                    new Uint8Array(subscribe.getKey("auth"))
-                  )
-                )
-              );
-            })
-            .catch(function (e) {
-              console.error("Tidak dapat melakukan subscribe ", e.message);
-            });
-        });
-      }
     });
   }
 }

@@ -1,12 +1,12 @@
 const fetch = require("node-fetch");
 var key =
-  "AAAAW6-dSCs:APA91bG89U-XcGCHbof81lR24n2YHsJ_hn6NEMlKKF0tUUicCpbYjAtOk_2sObKhMB1CSXFjplql_CAVhyf_fGVjPa7dB1MbzwMgKq6OfnobptPFnSwB19K4DcYb8chnmD08TQXe67p_";
+  "AAAAYTb-s6M:APA91bFFWCga0nernEpQ9yRrd-hbm8qyiMbdVdNuhrBBoqpwHGVqE5PMiEV80URz36ZNvgyDZEdfLYfspngFMLZpPXTlsbvKX0vncZ3DxU9CLpgTPCFTIv0dTJJ1VAlSRi5AB8zNaGN0";
 var to =
-  "eFUpWomnkWqZXFplvr7sHx:APA91bGLvn5B7IIFprwWxzAqZ-lggeU2kr6vsQzuiWjKzaCA0wGfIpXftvi9lIqr_CGTgUCg0zxgryLAwV5Avth0r6ji_kY4dnORtIjyKBX54tiJMiGm7OmvSfdn4G1u2CTcdyziqvA1";
+  "dAmJpJzr0kfVO-gUs9U1J6:APA91bHD5KbsTg2Yzxs2tRclsRqmhNxtQUF8SUaV9H9G3QmQcajJhWhTsYbFKsNgt5sOl-62Xv8VTR4XRfoG8aqetZA-93H1OGbI9t9Wsn5O-oKSLFO_fhD8Xebhkde4WiW0xbwqL3N-";
 var notification = {
   title: "Portugal vs. Denmark",
   body: "5 to 1",
-  icon: "firebase-logo.png",
+  icon: "fcm/fcm-logo.png",
   click_action: "http://localhost:8081",
 };
 

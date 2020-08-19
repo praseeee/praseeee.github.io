@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDS53XZpoCSU3llpWWKQ9DS1oNr5VwpCxY",
-  authDomain: "ball-ballan-e49ef.firebaseapp.com",
-  databaseURL: "https://ball-ballan-e49ef.firebaseio.com",
-  projectId: "ball-ballan-e49ef",
-  storageBucket: "ball-ballan-e49ef.appspot.com",
-  messagingSenderId: "393788344363",
-  appId: "1:393788344363:web:408093cb8670dd0b42026e",
-  measurementId: "G-2RHVHXZC8B",
+  apiKey: "AIzaSyDd9cBKyyaAs4UfKDjB-CdheHjSbsESUR8",
+  authDomain: "balll-balllan.firebaseapp.com",
+  databaseURL: "https://balll-balllan.firebaseio.com",
+  projectId: "balll-balllan",
+  storageBucket: "balll-balllan.appspot.com",
+  messagingSenderId: "417534489507",
+  appId: "1:417534489507:web:5806b0147c791ce0c3a016",
+  measurementId: "G-1X8DQWWGV8",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -19,7 +19,7 @@ const messaging = firebase.messaging();
 // [START set_public_vapid_key]
 // Add the public key generated from the console here.
 messaging.usePublicVapidKey(
-  "BEKlKGymZwGMvb1Uo682nfRckWs4aHp8wme-UgyzwWjLY5i8ICEXLCoxcxj1R7TDAI--GjP5KP3gdS9hWN_uVHY"
+  "BD7Kf8T2AN_Z6bvx6SijNoQK8X6eY_XPB-0sS-e_2k0btHFGENHL-BTLEmMgmbnoORuLc7_uHw6vXL9lGMxPODU"
 );
 // [END set_public_vapid_key]
 
