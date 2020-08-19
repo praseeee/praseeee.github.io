@@ -1,29 +1,29 @@
-var webPush = require("web-push");
-
-const vapidKeys = {
-  publicKey:
-    "BKzLWAnUeIap_maCX8tTe2K8HEOysKNp_uT1oh5ht_RJJjtBRSP6P3rEaqlc-EOjALvCD0gEFNfKg047bs2Gii8",
-  privateKey: "BKhD2F5yoVuVpGlVQ7_yOe1llVRZTnZREviyZYQ5J8w",
+const fetch = require("node-fetch");
+var key =
+  "AAAAy3zDZ2Y:APA91bE3X2o3RASVAf60sJFfcfmw2l4TrtC1QdjZpfAqyscaCdRnygcsRt317PMbpW4vTM4dMzq8iFYA9sbqigY4MmINzAdcnbuWuvX9Xb4WiLBiy_EEjnxDuQd6vxdu47pmcz8m9gDa";
+var to =
+  "eku0JUbXCt73nerr52AQcX:APA91bHBjSM1HK5ySAudLKp58jSgZ_HJCMCZ_FfdnS5a3y_XrkKqXL1CkgbG7QB_Yy90sBBXodg9WFU62OS2pKrmC7wSdBe6ovF0D19Lk26ri9jjzYOkC6fi9m7qgVjlnQaPHV1hvhww";
+var notification = {
+  title: "Portugal vs. Denmark",
+  body: "5 to 1",
+  icon: "firebase-logo.png",
+  click_action: "http://localhost:8081",
 };
 
-webPush.setVapidDetails(
-  "mailto:example@yourdomain.org",
-  vapidKeys.publicKey,
-  vapidKeys.privateKey
-);
-var pushSubscription = {
-  endpoint:
-    " https://fcm.googleapis.com/fcm/send/eBLqOKagS28:APA91bEBwl6pzCA6HLOHdDUdVlebxxCA-2-VP6FKLIRN9WHja3-E2gffrok2tGkjxp3wnS8OSysB_67N8o7iJ3-LokNw5DQkGd0lDEwYmTmPF1uzAMmIDr7t6ctwbRs4oUT3cZMg0IjC",
-  keys: {
-    p256dh:
-      "BDwXNmt8okhVims5VjTJgM8/KthFu9WqdI+nc1MsevFvVxW/sd+IUyJwZe8ntJXD4eX6gMpwuxLOugGygKxp7dM=",
-    auth: "sbcKLmYWS8bKAI/mVzSOwA==",
+fetch("https://fcm.googleapis.com/fcm/send", {
+  method: "POST",
+  headers: {
+    Authorization: "key=" + key,
+    "Content-Type": "application/json",
   },
-};
-var payload = "Selamat! Aplikasi Anda sudah dapat menerima push notifikasi!";
-
-var options = {
-  gcmAPIKey: "489407451958",
-  TTL: 60,
-};
-webPush.sendNotification(pushSubscription, payload, options);
+  body: JSON.stringify({
+    notification: notification,
+    to: to,
+  }),
+})
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.error(error);
+  });

@@ -199,11 +199,6 @@ function ctrlKlasemen() {
         if (response) {
           response.json().then(function (klasemens) {
             let klasemenss = klasemens.standings[0].table;
-            document.getElementById("body-content").innerHTML = `
-            <h4 class="flow-text center-align">Klasemen Liga Inggris</h4>
-            <div class="row">
-              <div class="col s12 m12" id="klasemen"></div>
-            </div>`;
             klasemenHTML = tableKlasemen(klasemenss);
             document.getElementById("klasemen").innerHTML = klasemenHTML;
           });
@@ -213,11 +208,6 @@ function ctrlKlasemen() {
 
   getKlasemen().then(function (klasemens) {
     let klasemenss = klasemens;
-    document.getElementById("body-content").innerHTML = `
-      <h4 class="flow-text center-align">Klasemen Liga Inggris</h4>
-      <div class="row">
-        <div class="col s12 m12" id="klasemen"></div>
-      </div>`;
     klasemenHTML = tableKlasemen(klasemenss);
     document.getElementById("klasemen").innerHTML = klasemenHTML;
   });
