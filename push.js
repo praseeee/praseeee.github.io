@@ -1,8 +1,8 @@
 const fetch = require("node-fetch");
 var key =
-  "AAAAy3zDZ2Y:APA91bE3X2o3RASVAf60sJFfcfmw2l4TrtC1QdjZpfAqyscaCdRnygcsRt317PMbpW4vTM4dMzq8iFYA9sbqigY4MmINzAdcnbuWuvX9Xb4WiLBiy_EEjnxDuQd6vxdu47pmcz8m9gDa";
+  "AAAAW6-dSCs:APA91bG89U-XcGCHbof81lR24n2YHsJ_hn6NEMlKKF0tUUicCpbYjAtOk_2sObKhMB1CSXFjplql_CAVhyf_fGVjPa7dB1MbzwMgKq6OfnobptPFnSwB19K4DcYb8chnmD08TQXe67p_";
 var to =
-  "eku0JUbXCt73nerr52AQcX:APA91bHBjSM1HK5ySAudLKp58jSgZ_HJCMCZ_FfdnS5a3y_XrkKqXL1CkgbG7QB_Yy90sBBXodg9WFU62OS2pKrmC7wSdBe6ovF0D19Lk26ri9jjzYOkC6fi9m7qgVjlnQaPHV1hvhww";
+  "eFUpWomnkWqZXFplvr7sHx:APA91bGLvn5B7IIFprwWxzAqZ-lggeU2kr6vsQzuiWjKzaCA0wGfIpXftvi9lIqr_CGTgUCg0zxgryLAwV5Avth0r6ji_kY4dnORtIjyKBX54tiJMiGm7OmvSfdn4G1u2CTcdyziqvA1";
 var notification = {
   title: "Portugal vs. Denmark",
   body: "5 to 1",

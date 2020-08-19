@@ -7,14 +7,14 @@ importScripts(
 );
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCuC1LLLr5y1XefGCisD0dxXysagbYMhX0",
-  authDomain: "notifikasi-13-08-2020.firebaseapp.com",
-  databaseURL: "https://notifikasi-13-08-2020.firebaseio.com",
-  projectId: "notifikasi-13-08-2020",
-  storageBucket: "notifikasi-13-08-2020.appspot.com",
-  messagingSenderId: "873971541862",
-  appId: "1:873971541862:web:885ad2940fd95cf8dacaa7",
-  measurementId: "G-QPZBT23W5B",
+  apiKey: "AIzaSyDS53XZpoCSU3llpWWKQ9DS1oNr5VwpCxY",
+  authDomain: "ball-ballan-e49ef.firebaseapp.com",
+  databaseURL: "https://ball-ballan-e49ef.firebaseio.com",
+  projectId: "ball-ballan-e49ef",
+  storageBucket: "ball-ballan-e49ef.appspot.com",
+  messagingSenderId: "393788344363",
+  appId: "1:393788344363:web:408093cb8670dd0b42026e",
+  measurementId: "G-2RHVHXZC8B",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
